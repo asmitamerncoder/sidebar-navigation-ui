@@ -20,7 +20,7 @@ const HorizontalBarChart = () => {
                 'rgba(201, 203, 207, 0.6)'
             ],
             borderColor: '#3380FF',
-            borderWidth: 1,
+           
         }],
     };
 
