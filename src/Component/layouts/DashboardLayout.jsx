@@ -26,50 +26,74 @@ function DashboardLayout({ children }) {
           <p className='logo'>GlobalFit</p>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/")}}>
+          <div className='single-menu-item-wrapper' onClick={() => {
+            navigate("/")
+            setIsOpen(!isOpen)
+          }}>
             <FontAwesomeIcon icon={faHouse} className='fa-icon' />
             <p className='menu-text'>DashBoard</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/goals")}}>
+          <div className='single-menu-item-wrapper' onClick={() => {
+            navigate("/goals")
+            setIsOpen(!isOpen)
+          }}>
             < FontAwesomeIcon icon={faBullseye} className='fa-icon' />
             <p className='menu-text'>Goals</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/workouts")}}>
+          <div className='single-menu-item-wrapper' onClick={() => {
+            navigate("/workouts")
+            setIsOpen(!isOpen)
+          }}>
             <FontAwesomeIcon icon={faDumbbell} className='fa-icon' />
             <p className='menu-text'>Workouts</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/dite")}}>
+          <div className='single-menu-item-wrapper' onClick={() => {
+            navigate("/dite")
+            setIsOpen(!isOpen)
+          }}>
             <FontAwesomeIcon icon={faAppleWhole} className='fa-icon' />
             <p className='menu-text'>Dite</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/friends")}}>
+          <div className='single-menu-item-wrapper' onClick={() => {
+            navigate("/friends")
+            setIsOpen(!isOpen)
+          }}>
             <FontAwesomeIcon icon={faUser} className='fa-icon' />
             <p className='menu-text'>Friends</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/settings")}}>
+          <div className='single-menu-item-wrapper' onClick={() => {
+            navigate("/settings")
+            setIsOpen(!isOpen)
+          }}>
             <FontAwesomeIcon icon={faGears} className='fa-icon' />
             <p className='menu-text'>Settings</p>
           </div>
         </div>
         <div><hr className='devide-sidebar'></hr></div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/help")}}>
+          <div className='single-menu-item-wrapper' onClick={() => {
+            navigate("/help")
+            setIsOpen(!isOpen)
+          }}>
             <FontAwesomeIcon icon={faCircleInfo} className='fa-icon' />
             <p className='menu-text'>Help</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/")}}>
+          <div className='single-menu-item-wrapper' onClick={() => {
+            navigate("/")
+            setIsOpen(!isOpen)
+          }}>
             <FontAwesomeIcon icon={faRightFromBracket} className='fa-icon' />
             <p className='menu-text'>Logout</p>
           </div>

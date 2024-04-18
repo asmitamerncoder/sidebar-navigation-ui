@@ -7,6 +7,11 @@
 
 }
 
+::-webkit-scrollbar {
+  height: 0; 
+  width: 0; 
+}
+
 .body-content {
   padding-top: 70px;
   margin-left: 230px;
@@ -685,7 +690,7 @@ span {
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
   .body-content {
-    padding-top: 60px;
+    padding-top: 70px;
     margin-left: 0px;
   }
 
