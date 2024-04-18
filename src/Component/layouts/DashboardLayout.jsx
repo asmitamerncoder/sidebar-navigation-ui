@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import { FaUserCircle } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRectangleXmark, faBars, faBell, faHouse, faBullseye, faDumbbell, faAppleWhole, faUser, faGears, faCircleInfo, faRightFromBracket, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-
+import { useNavigate } from 'react-router-dom';
 
 
 function DashboardLayout({ children }) {
+
+  let navigate = useNavigate();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,50 +26,50 @@ function DashboardLayout({ children }) {
           <p className='logo'>GlobalFit</p>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper'>
+          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/")}}>
             <FontAwesomeIcon icon={faHouse} className='fa-icon' />
-            <p className='menu-text'>Main</p>
+            <p className='menu-text'>DashBoard</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper'>
+          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/goals")}}>
             < FontAwesomeIcon icon={faBullseye} className='fa-icon' />
             <p className='menu-text'>Goals</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper'>
+          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/workouts")}}>
             <FontAwesomeIcon icon={faDumbbell} className='fa-icon' />
             <p className='menu-text'>Workouts</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper'>
+          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/dite")}}>
             <FontAwesomeIcon icon={faAppleWhole} className='fa-icon' />
             <p className='menu-text'>Dite</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper'>
+          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/friends")}}>
             <FontAwesomeIcon icon={faUser} className='fa-icon' />
             <p className='menu-text'>Friends</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper'>
+          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/settings")}}>
             <FontAwesomeIcon icon={faGears} className='fa-icon' />
             <p className='menu-text'>Settings</p>
           </div>
         </div>
         <div><hr className='devide-sidebar'></hr></div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper'>
+          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/help")}}>
             <FontAwesomeIcon icon={faCircleInfo} className='fa-icon' />
             <p className='menu-text'>Help</p>
           </div>
         </div>
         <div className='sidebar-menu-list-wrapper'>
-          <div className='single-menu-item-wrapper'>
+          <div className='single-menu-item-wrapper' onClick={()=>{navigate("/")}}>
             <FontAwesomeIcon icon={faRightFromBracket} className='fa-icon' />
             <p className='menu-text'>Logout</p>
           </div>
